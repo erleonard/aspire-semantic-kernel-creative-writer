@@ -20,7 +20,6 @@ The frontend of the application is developed using React and Vite.
 - [Credits](#credits)
 - [License](#license)
 
-
 ## Overview
 
 The application consists of 2 main projects:
@@ -32,6 +31,14 @@ The application consists of 2 main projects:
 The app also includes a class library project, ChatApp.ServiceDefaults, that contains the service defaults used by the service projects.
 
 In addition it has two **.NET Interactive Notebooks** inside the `./experiments/` to show a simple WriterReviewer scenario and also the full version of the CreativeWritingAssistant outside of a real system.
+
+![App preview](images/app_preview.png)
+
+![Notebook preview](images/notebook_preview.png)
+
+![Architecture](images/container_architecture.png)
+
+![Agents](images/agents_architecture.png)
 
 ## Local Experiments
 
