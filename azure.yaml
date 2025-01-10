@@ -4,5 +4,5 @@ name: chatapp-apphost
 services:  
   app:
     language: dotnet
-    project: ./ChatApp.AppHost.csproj
+    project: ./src/ChatApp.AppHost/ChatApp.AppHost.csproj
     host: containerapp
