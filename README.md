@@ -28,22 +28,27 @@ This project is an alternative to the python version at <https://github.com/Azur
 It is a comprehensive example of a chat application built with .NET Aspire, Semantic Kernel, and the `@microsoft/ai-chat-protocol` package.  
 The frontend of the application is developed using React and Vite.
 
-- [Overview](#overview)
-- [Local Experiments](#local-experiments)
+- [Features](#features)
+- [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Try it out](#try-it-out)
-- [Local App Development](#local-app-development)
+- [Local Development](#local-development)
   - [Prerequisites](#prerequisites-1)
   - [Running the app](#running-the-app)
 - [Azure Deployment](#azure-deployment)
   - [Prerequisites](#prerequisites-2)
   - [Instructions](#instructions)
 - [Sample Product Data](#sample-product-data)
+- [Guidance](#guidance)
+  - [Region Availability](#region-availability)
+  - [Costs](#costs)
+  - [Security](#security)
 - [Resources](#resources)
 - [Credits](#credits)
+- [Important Security Notice](#important-security-notice)
 - [License](#license)
 
-## Overview
+## Features
 
 The application consists of 2 main projects:
 
@@ -59,7 +64,9 @@ In addition it has two **.NET Interactive Notebooks** inside the `./experiments/
 
 ![Agents](./images/agents_architecture.png)
 
-## Local Experiments
+## Getting Started
+
+The first step for getting started with this template are the notebooks which can be used as local experiments.
 
 ![Notebook preview](./images/notebook_preview.png)
 
@@ -74,7 +81,7 @@ In addition it has two **.NET Interactive Notebooks** inside the `./experiments/
 
 Open the notebooks under `./experiments/` and follow their instructions.
 
-## Local App Development
+## Local Development
 
 ### Prerequisites
 
@@ -149,6 +156,22 @@ Navigate into `./ChatApp.AppHost/`.
 
 To load sample product data into Azure AI Search as vector store, use the notebook inside `./data/`.
 
+## Guidance
+
+### Region Availability
+
+This template uses `gpt-4o` and `text-embedding-3-large` which may not be available in all Azure regions. Check for [up-to-date region availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models#standard-deployment-model-availability) and select a region during deployment accordingly
+
+* we recommend using eastus2 or swedencentral
+
+### Costs
+
+You can estimate the cost of this project's architecture with [Azure's pricing calculator](https://azure.microsoft.com/pricing/calculator/)
+
+### Security
+
+This template has [Managed Identity](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview) and Key Vault built in to eliminate the need for developers to manage credentials. Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials. Additionally, we have added a [GitHub Action tool](https://github.com/microsoft/security-devops-action) that scans the infrastructure-as-code files and generates a report containing any detected issues. To ensure best practices in your repo we recommend anyone creating solutions based on our templates ensure that the [Github secret scanning](https://docs.github.com/code-security/secret-scanning/about-secret-scanning) setting is enabled in your repos.
+
 ## Resources
 
 - [Semantic Kernel Documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
@@ -160,6 +183,12 @@ To load sample product data into Azure AI Search as vector store, use the notebo
 
 - Initially based on [Aspire Sample Application](https://github.com/Azure-Samples/aspire-semantic-kernel-basic-chat-app)
 - Idea from [Creative Writing Assistant: Working with Agents using Prompty (Python Implementation)](https://github.com/Azure-Samples/contoso-creative-writer)
+
+## Important Security Notice
+
+This template, the application code and configuration it contains, has been built to showcase Microsoft Azure specific services and tools. We strongly advise our customers not to make this code part of their production environments without implementing or enabling additional security features.  
+
+For a more comprehensive list of best practices and security recommendations for Intelligent Applications, [visit our official documentation](https://learn.microsoft.com/en-us/azure/well-architected/ai/application-design).
 
 ## License
 
