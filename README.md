@@ -16,8 +16,8 @@ products:
 - dotnet
 - dotnet-aspire
 urlFragment: aspire-semantic-kernel-creative-writer
-name: Creative Writing Assistant: Working with Agents using Semantic Kernel and .NET Aspire
-description: Comprehensive example of a multi-agent chat application built with .NET Aspire, Semantic Kernel, React and Vite, and the `@microsoft/ai-chat-protocol` package.
+name: "Creative Writing Assistant: Working with Agents using Semantic Kernel and .NET Aspire"
+description: "Comprehensive example of a multi-agent chat application built with .NET Aspire, Semantic Kernel, React and Vite, and the `@microsoft/ai-chat-protocol` package."
 ---
 -->
 
