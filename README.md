@@ -1,4 +1,27 @@
-# Creative Writing Assistant: Working with Agents using Semantic Kernel and Aspire (C# Implementation)
+<!--
+---
+page_type: sample
+languages:
+- azdeveloper
+- bicep
+- csharp
+- typescript
+products:
+- ai-services
+- azure
+- azure-bing-web
+- azure-cognitive-search
+- azure-container-apps
+- azure-openai
+- dotnet
+- dotnet-aspire
+urlFragment: aspire-semantic-kernel-creative-writer
+name: Creative Writing Assistant: Working with Agents using Semantic Kernel and .NET Aspire
+description: Comprehensive example of a multi-agent chat application built with .NET Aspire, Semantic Kernel, React and Vite, and the `@microsoft/ai-chat-protocol` package.
+---
+-->
+
+# Creative Writing Assistant: Working with Agents using Semantic Kernel and .NET Aspire (C#)
 
 This project is an alternative to the python version at <https://github.com/Azure-Samples/contoso-creative-writer>.
 
@@ -32,13 +55,13 @@ The app also includes a class library project, ChatApp.ServiceDefaults, that con
 
 In addition it has two **.NET Interactive Notebooks** inside the `./experiments/` to show a simple WriterReviewer scenario and also the full version of the CreativeWritingAssistant outside of a real system.
 
-![App preview](images/app_preview.png)
+![App preview](./images/app_preview.png)
 
-![Agents](images/agents_architecture.png)
+![Agents](./images/agents_architecture.png)
 
 ## Local Experiments
 
-![Notebook preview](images/notebook_preview.png)
+![Notebook preview](./images/notebook_preview.png)
 
 ### Prerequisites
 
@@ -87,7 +110,7 @@ Example to add into a *appsettings.Development.json*
 
 ## Azure Deployment
 
-![Architecture](images/container_architecture.png)
+![Architecture](./images/container_architecture.png)
 
 ### Prerequisites
 
