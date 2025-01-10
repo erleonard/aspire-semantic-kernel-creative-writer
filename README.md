@@ -34,13 +34,11 @@ In addition it has two **.NET Interactive Notebooks** inside the `./experiments/
 
 ![App preview](images/app_preview.png)
 
-![Notebook preview](images/notebook_preview.png)
-
-![Architecture](images/container_architecture.png)
-
 ![Agents](images/agents_architecture.png)
 
 ## Local Experiments
+
+![Notebook preview](images/notebook_preview.png)
 
 ### Prerequisites
 
@@ -88,6 +86,8 @@ Example to add into a *appsettings.Development.json*
 ```
 
 ## Azure Deployment
+
+![Architecture](images/container_architecture.png)
 
 ### Prerequisites
 
