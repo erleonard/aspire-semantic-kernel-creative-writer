@@ -103,6 +103,7 @@ For more information on local provisioning of Aspire applications, refer to the 
 > <https://learn.microsoft.com/en-us/dotnet/aspire/azure/local-provisioning#configuration>
 
 Example to add into a `appsettings.Development.json` in the `ChatApp.AppHost` directory:
+
 ``` json
 {
   "Azure": {
@@ -111,6 +112,24 @@ Example to add into a `appsettings.Development.json` in the `ChatApp.AppHost` di
     "ResourceGroup": "<Valid resource group name>",
     "Location": "swedencentral",
     "CredentialSource": "InteractiveBrowser"
+  }
+}
+```
+
+If you want to use existing Azure resource, but their endpoints below the Azure section:
+
+```json
+{
+  "Azure": {
+    "SubscriptionId": "<Your subscription id>",
+    "AllowResourceGroupCreation": true,
+    "ResourceGroup": "<Valid resource group name>",
+    "Location": "swedencentral",
+    "CredentialSource": "InteractiveBrowser"
+  },
+  "ConnectionStrings": {
+    "openAI": "https://<lorem>.openai.azure.com/",
+    "vectorSearch": "https://<lorem>.search.windows.net"
   }
 }
 ```
