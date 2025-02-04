@@ -9,7 +9,6 @@ languages:
 products:
 - ai-services
 - azure
-- azure-bing-web
 - azure-cognitive-search
 - azure-container-apps
 - azure-openai
